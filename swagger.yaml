@@ -961,24 +961,20 @@ definitions:
   User:
     type: "object"
     required:
-    - "first_name"
-    - "last_name"
-    - "phone_number"
-    - "email"
-    - "password"
+    - "name"
+    - "lastname"
+    - "phone"
     properties:
       id:
         type: "integer"
         format: "int64"
-      first_name:
+      name:
         type: "string"
         example: "Mikah"
-      last_name:
+      lastname:
         type: "string"
         example: "Mikah"
-      phone_number:
-        type: "number"
-      password:
+      phone:
         type: "string"
       email:
         type: "string"
@@ -986,34 +982,27 @@ definitions:
   UserSignUp:
     type: "object"
     required:
-    - "first_name"
-    - "last_name"
-    - "phone_number"
-    - "email"
-    - "password"
+    - "name"
+    - "lastname"
+    - "phone"
+    - "required"
     properties:
       id:
         type: "integer"
         format: "int64"
-      first_name:
+      name:
         type: "string"
         example: "Mikah"
-      last_name:
+      lastname:
         type: "string"
         example: "Mikah"
-      phone_number:
+      phone:
         type: "string"
       password:
         type: "string"
       email:
         type: "string"
         example: "mikah@domain.com"
-      is_active:
-        type: "boolean"
-      api_token:
-        type: "string"
-      user_role:
-        type: "string"
   Complaint:
     type: "object"
     required:
